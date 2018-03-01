@@ -27,7 +27,7 @@ $(window).scroll(function() {
 		<nav class="navbar navbar-inverse navbar-static-top nav-upper nav1">
   			<div class="container-fluid">
     			<ul class="nav navbar-nav navbar-right">
-      				<li><a href="#"> Sign Up</a></li>
+      				<li><a href="SignUp.jsp"> Sign Up</a></li>
       				<li><a href="#"> Login</a></li>
     			</ul>
   			</div>

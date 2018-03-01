@@ -26,8 +26,7 @@ $(window).scroll(function() {
 		<nav class="navbar navbar-inverse navbar-static-top nav-upper nav1">
   			<div class="container-fluid">
     			<ul class="nav navbar-nav navbar-right">
-      				<li><a href="#"> Sign Up</a></li>
-      				<li><a href="#"> Login</a></li>
+      				<li><a href="Home.jsp"> Log Out</a></li>
     			</ul>
   			</div>
 		</nav>
@@ -48,10 +47,11 @@ $(window).scroll(function() {
  			</div>
 		</nav>
   	</div>
-<div class="row">
-<h1> WELCOME PAULO NEIL </h1> <%  %>
-</div>
 
+<div class = "profilepic">
+<img src = "profpic.png" align = "left"><h3>Name: Paulo Corpuz</h3>
+<h3>Brief Description: </h3>
+</div>
 
 </body>
 </html>
