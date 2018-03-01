@@ -49,7 +49,7 @@ $(window).scroll(function() {
   	</div>
 
 <div class = "profilepic">
-<img src = "profpic.png" align = "left"><h3>Name: Paulo Corpuz</h3>
+<img src = "profpic.png" align = "left"><h3>Name: Benjamin Tan</h3>
 <h3>Brief Description: </h3>
 </div>
 
