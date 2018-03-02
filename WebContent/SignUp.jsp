@@ -1,3 +1,4 @@
+<title>AION Sign Up</title>
 <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
@@ -19,7 +20,13 @@
                     <input type="password" name="confirm_password" value="" class="form-control input-lg" placeholder="Confirm Password"/>                    
                     <br>
               <span class="help-block">By clicking Create my account, you agree to our Terms and that you have read our Data Use Policy, including our Cookie Use.</span>
-                    <a href = "Home.jsp"></a><button class="btn btn-lg btn-primary btn-block signup-btn" type="submit">Create my account</button></a>
+                    <input type = "button" class="btn btn-lg btn-primary btn-block signup-btn" value = "Create My Account" onclick= "relocate_home()">
+                    <script>
+						function relocate_home()
+						{
+						     location.href = "Home.jsp";
+						} 
+					</script>
             </form>          
           </div>
 </div>            
