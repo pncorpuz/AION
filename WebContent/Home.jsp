@@ -27,8 +27,27 @@ $(window).scroll(function() {
 		<nav class="navbar navbar-inverse navbar-static-top nav-upper nav1">
   			<div class="container-fluid">
     			<ul class="nav navbar-nav navbar-right">
-      				<li><a href="#"> Sign Up</a></li>
-      				<li><a href="#"> Login</a></li>
+      				
+      				<form id="signin" class="navbar-form navbar-right" role="form">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                            <input id="email" type="email" class="form-control" name="email" value="" placeholder="Email Address">                                        
+                        </div>
+
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                            <input id="password" type="password" class="form-control" name="password" value="" placeholder="Password">                                        
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Login</button>
+                        <input type = "button" class="btn btn-primary" onclick = "relocate_home()" value = "Sign Up">
+                        <script>
+						function relocate_home()
+						{
+						     location.href = "SignUp.jsp";
+						} 
+					</script>
+                   </form>
     			</ul>
   			</div>
 		</nav>
