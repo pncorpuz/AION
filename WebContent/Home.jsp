@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"  %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -24,49 +25,7 @@ $(window).scroll(function() {
 <body class="container-fluid">
 
 	<div class="row">
-		<nav class="navbar navbar-inverse navbar-static-top nav-upper nav1">
-  			<div class="container-fluid">
-    			<ul class="nav navbar-nav navbar-right">
-      				
-      				<form id="signin" class="navbar-form navbar-right" role="form">
-                        <div class="input-group">
-                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                            <input id="email" type="email" class="form-control" name="email" value="" placeholder="Email Address">                                        
-                        </div>
-
-                        <div class="input-group">
-                            <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-                            <input id="password" type="password" class="form-control" name="password" value="" placeholder="Password">                                        
-                        </div>
-
-                        <button type="submit" class="btn btn-primary">Login</button>
-                        <input type = "button" class="btn btn-primary" onclick = "relocate_home()" value = "Sign Up">
-                        <script>
-						function relocate_home()
-						{
-						     location.href = "SignUp.jsp";
-						} 
-					</script>
-                   </form>
-    			</ul>
-  			</div>
-		</nav>
-  	
-  	
-  		<nav class="navbar navbar-inverse navbar-static-top navbar-lower nav2">
- 			<div class="container-fluid">
- 				<form class="navbar-form navbar-left" role="search">
-					<div class="form-group">
-					  <div class="input-group">
-					    <input type="text" class="form-control" placeholder="Search">
-					    <span class="input-group-btn">
-					      <button type="submit" class="btn btn-default">Submit</button>
-					    </span>
-					  </div>
-					</div>
-      			</form>
- 			</div>
-		</nav>
+		<%@ include file="navbar.jsp" %>
   	</div>
 	<div class="row">
 		<div id="myCarousel" class="carousel slide" data-ride="carousel">
