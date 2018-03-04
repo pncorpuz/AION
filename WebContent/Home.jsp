@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+<%@ taglib prefix = "c" uri = "http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -26,21 +27,19 @@ $(window).scroll(function() {
 	<div class="row">
 		<nav class="navbar navbar-inverse navbar-static-top nav-upper nav1">
   			<div class="container-fluid">
-    			<ul class="nav navbar-nav navbar-right">
-      				
-      				<form id="signin" class="navbar-form navbar-right" role="form">
+      				<form id="signin" class="navbar-form navbar-right" role="form" action="Login" method="post">
                         <div class="input-group">
                             <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                            <input id="email" type="email" class="form-control" name="email" value="" placeholder="Email Address">                                        
+                            <input id="uname" type="text" class="form-control" name="username">                                        
                         </div>
 
                         <div class="input-group">
                             <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-                            <input id="password" type="password" class="form-control" name="password" value="" placeholder="Password">                                        
+                            <input id="password" type="password" class="form-control" name="password">                                        
                         </div>
 
                         <button type="submit" class="btn btn-primary">Login</button>
-                        <input type = "button" class="btn btn-primary" onclick = "relocate_home()" value = "Sign Up">
+                        <input  type="button" class="btn btn-primary" onclick = "relocate_home()" value = "Sign Up">
                         <script>
 						function relocate_home()
 						{
@@ -48,7 +47,7 @@ $(window).scroll(function() {
 						} 
 					</script>
                    </form>
-    			</ul>
+    			
   			</div>
 		</nav>
   	
