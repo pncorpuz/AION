@@ -51,7 +51,7 @@ $(window).scroll(function() {
 	<div>
 		<ul>
 		  <h1>What's Hot</h1>
-		  <li style="float:right"><a class="active" href="#about">See More+</a></li>
+		  <li style="float:right"><a class="active" href="tempProducts.jsp">See More+</a></li>
 		</ul>
 	</div>
 	<div class="row" >
