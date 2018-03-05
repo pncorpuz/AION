@@ -23,7 +23,7 @@ $(window).scroll(function() {
 </head>
 <body class="container-fluid">
 	<div class="row">
-		<%@ include file="navbar.jsp" %>
+		<%@ include file="navbar2.jsp" %>
   	</div>
   		<div class="row">
 		<h3 class="site-title">My Profile</h3>

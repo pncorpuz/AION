@@ -48,38 +48,25 @@ $(window).scroll(function() {
 		  	</div>
 		</div>
 	</div>
-	<div class="row" >
-		<h1> Watches for Him</h1>
-		<hr>
+	<div>
+		<ul>
+		  <h1>What's Hot</h1>
+		  <li style="float:right"><a class="active" href="#about">See More+</a></li>
+		</ul>
 	</div>
 	<div class="row" >
-	 <div class= container style="display:flex; width:826px; margin:0 auto;">
-		<div class= "prod" style="background-color:yellow;">
-		</div>
-		<div class="prod" style="background-color:blue;">
-		</div>
-		<div class="prod" style="background-color:black;">
-		</div>
-		<div class="prod" style="background-color:green;">
-		</div>
-	</div>
-	</div>
-	<div class="row" >
-		<h1> Watches for Her</h1>
-		<hr>
-	</div>
-	<div class="row" >
-	 <div class= container style="display:flex; width:826px; margin:0 auto;">
-		<div class= "prod" style="background-color:yellow;">
-		</div>
-		<div class="prod" style="background-color:blue;">
-		</div>
-		<div class="prod" style="background-color:black;">
-		</div>
-		<div class="prod" style="background-color:green;">
+		<div class= container style="display:flex; width:826px; margin:0 auto;">
+			<div class= "prod" style="background-color:yellow;">
+			</div>
+			<div class="prod" style="background-color:blue;">
+			</div>
+			<div class="prod" style="background-color:black;">
+			</div>
+			<div class="prod" style="background-color:green;">
+			</div>
 		</div>
 	</div>
-	</div>
+	
 	
 
 
