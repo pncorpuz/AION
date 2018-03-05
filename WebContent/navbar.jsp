@@ -11,7 +11,7 @@
   			<div class="container-fluid">
   			<c:choose>
   			<c:when test="${sessionScope.username != null}">
-  				<form action="Logout">
+  				<form action="Logout" class="navbar-form navbar-right">
       				<input type="submit" class="btn btn-primary" value="Logout">
       			</form>
                    </c:when>
