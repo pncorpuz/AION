@@ -1,7 +1,6 @@
 package com.login;
 
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.sql.SQLException;
 
 import javax.servlet.ServletException;
@@ -44,7 +43,7 @@ public class Login extends HttpServlet {
 		String uname = request.getParameter("username");
 		String pass = request.getParameter("password");
 		LoginDao dao = new LoginDao();
-		PrintWriter out = response.getWriter();
+		
 		
 		
 		
@@ -56,10 +55,7 @@ public class Login extends HttpServlet {
 				response.sendRedirect("userprof.jsp");
 			}
 			else {
-				out.println("<script type=\"text/javascript\">");
-				 out.println("alert('User or password incorrect');");
-				 out.println("location='Home.jsp';");
-				 out.println("</script>");
+				response.sendRedirect("Home.jsp");
 			}
 		} catch (SQLException e) {
 			

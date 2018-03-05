@@ -28,7 +28,7 @@ $(window).scroll(function() {
   		response.sendRedirect("Home.jsp");
   	}
   %>
-	${username}
+
 	<div class="row">
 		<%@ include file="navbar.jsp" %>
   	</div>
