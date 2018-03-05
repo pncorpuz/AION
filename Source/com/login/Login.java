@@ -42,16 +42,17 @@ public class Login extends HttpServlet {
 		// TODO Auto-generated method stub
 		String uname = request.getParameter("username");
 		String pass = request.getParameter("password");
-		
-		
 		LoginDao dao = new LoginDao();
+		
+		
+		
 		
 		try {
 			if(dao.check(uname, pass)) {
 				
 				HttpSession session = request.getSession();
 				session.setAttribute("username", uname);
-				response.sendRedirect("Profile.jsp");
+				response.sendRedirect("userprof.jsp");
 			}
 			else {
 				response.sendRedirect("Home.jsp");
