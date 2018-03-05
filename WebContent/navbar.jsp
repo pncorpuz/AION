@@ -5,8 +5,19 @@
 
 
 <nav class="navbar navbar-inverse navbar-static-top nav-upper nav1">
+
+
+
   			<div class="container-fluid">
-      				<form id="signin" class="navbar-form navbar-right" role="form" action="Login" method="post">
+  			<c:choose>
+  			<c:when test="${sessionScope.username != null}">
+  				<form action="Logout">
+      				<input type="submit" class="btn btn-primary" value="Logout">
+      			</form>
+                   </c:when>
+                   <c:otherwise>
+                   		
+                   	<form id="signin" class="navbar-form navbar-right" role="form" action="Login" method="post">
                         <div class="input-group">
                             <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
                             <input id="uname" type="text" class="form-control" name="username">                                        
@@ -26,7 +37,8 @@
 						} 
 					</script>
                    </form>
-    			
+                   </c:otherwise>
+    			</c:choose>
   			</div>
 		</nav>
   	
