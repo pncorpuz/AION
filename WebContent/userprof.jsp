@@ -30,7 +30,7 @@ $(window).scroll(function() {
   %>
 
 	<div class="row">
-		<%@ include file="navbar2.jsp" %>
+		<%@ include file="navbar.jsp" %>
   	</div>
   		<div class="row">
 		<h3 class="site-title">My Profile</h3>
